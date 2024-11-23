@@ -1,6 +1,6 @@
- # ComfyUI-docker
+ # ComfyUI Docker
 
-Dockerfile for ComfyUI
+Dockerfile for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) and instructions to deploy it to Cloud Run
 
 ## Build and run locally
 
