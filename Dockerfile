@@ -8,6 +8,8 @@ RUN apt-get install -y git
 RUN mkdir "/comfyui"
 WORKDIR "/comfyui"
 
+# TODO: download a specific release
+# https://github.com/comfyanonymous/ComfyUI/archive/refs/tags/v0.3.4.tar.gz
 RUN git clone https://github.com/comfyanonymous/ComfyUI
 WORKDIR "/comfyui/ComfyUI"
 RUN git pull
