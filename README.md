@@ -35,16 +35,6 @@ gcloud storage folders create gs://$BUCKET/output
 
 ### Downloading a model
 
-#### Using ComfyUI-Manager
-
-If you want to be able to manage models from the UI,
-upload the ComfyUI-Manager custom node in Cloud Storage.
-
-```
-git clone https://github.com/ltdrdata/ComfyUI-Manager.git
-gcloud storage cp -R ComfyUI-Manager gs://$BUCKET/custom_nodes/ComfyUI-Manager
-```
-
 #### Manually
 
 See [here](https://www.comflowy.com/preparation-for-study/model)
@@ -53,6 +43,15 @@ Download models and upload them to Cloud Storage:
 
 ```
 gcloud storage cp model.safetensors gs://$BUCKET/models/checkpoints/
+```
+
+#### Using ComfyUI-Manager
+
+Alternatively, if you want to be able to manage models from the UI, upload the `ComfyUI-Manager` custom node to Cloud Storage.
+
+```
+git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+gcloud storage cp -R ComfyUI-Manager gs://$BUCKET/custom_nodes/ComfyUI-Manager
 ```
 
 ### Deploy
