@@ -62,6 +62,7 @@ Deploy to Cloud Run with 1 GPU, mount the 4 folders from Cloud Storage at each l
 ```
 gcloud beta run deploy comfyui --region us-central1 --project $PROJECT_ID  --source . \
         --gpu 1 \
+        --port 8188 \
         \
         --add-volume name=myvol1,type=cloud-storage,bucket=$BUCKET,mount-options="only-dir=models" \
         --add-volume-mount volume=myvol1,mount-path=/comfyui/ComfyUI/models \
