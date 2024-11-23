@@ -6,8 +6,10 @@ Dockerfile for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) and instruct
 
 ```
 docker build . -t comfyui
-docker run -p8080:8188 comfyui
+docker run -p8188:8188 comfyui
 ```
+
+Then open http://localhost:8188
 
 ## Deploy to Cloud Run
 
