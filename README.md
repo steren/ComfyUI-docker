@@ -52,12 +52,12 @@ See [here](https://www.comflowy.com/preparation-for-study/model)
 Download models and upload them to Cloud Storage:
 
 ```
-gcloud storage cp model gs://$BUCKET/models/SD1.5/...
+gcloud storage cp model.safetensors gs://$BUCKET/models/checkpoints/
 ```
 
 ### Deploy
 
-Deploy to Cloud Run with 1 GPU, mount the 4 folders from Cloud Storage at specific locations.
+Deploy to Cloud Run with 1 GPU, mount the 4 folders from Cloud Storage at each locations.
 
 ```
 gcloud beta run deploy comfyui --region us-central1 --project $PROJECT_ID  --source . \
